@@ -3,15 +3,7 @@
   "use strict";
 
   /*
-  |--------------------------------------------------------------------------
-  | Template Name: Davix
-  | Author: Laralink
-  | Version: 1.0.0
-  |--------------------------------------------------------------------------
-  |--------------------------------------------------------------------------
-  | TABLE OF CONTENTS:
-  |--------------------------------------------------------------------------
-  |
+  | CONTENTS:
   | 1. Placeholder
   | 2. Dynamic Background
   | 3. Menu
@@ -27,9 +19,7 @@
   | 13. Parallax Effect
   */
 
-  /*--------------------------------------------------------------
-    Scripts initialization
-  --------------------------------------------------------------*/
+  /* Scripts initialization------*/
   $.exists = function (selector) {
     return $(selector).length > 0;
   };
@@ -63,17 +53,13 @@
     parallaxEffect();
   });
 
-  /*--------------------------------------------------------------
-    1. Placeholder
-  --------------------------------------------------------------*/
+  /* 1. Placeholder--*/
   function preloaderSetup() {
     $(".st-perloader").fadeOut();
     $("st-perloader-in").delay(150).fadeOut("slow");
   }
 
-  /*--------------------------------------------------------------
-    2. Dynamic Background
-  --------------------------------------------------------------*/
+  /* 2. Dynamic Background--*/
   function dynamicBackground() {
     // Background images
     $('.st-dynamic-bg').each(function () {
@@ -84,9 +70,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    3. Menu
-  --------------------------------------------------------------*/
+  /* 3. Menu--*/
   function mainMenu() {
     $('.st-nav').append('<span class="st-munu-toggle"><span></span></span>');
     $('.menu-item-has-children').append('<span class="st-munu-dropdown-toggle"></span>');
@@ -98,9 +82,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    4. Sticky Header
-  --------------------------------------------------------------*/
+  /* 4. Sticky Header--*/
   function stickyHeader() {
     var scroll = $(window).scrollTop();
     if (scroll >= 10) {
@@ -110,9 +92,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    5. One Page Navigation
-  --------------------------------------------------------------*/
+  /*  5. One Page Navigation--*/
   function onePageNavigation() {
     // Click To Go Top
     $('.st-smooth-move').on('click', function () {
@@ -177,9 +157,7 @@
   }
 
 
-  /*--------------------------------------------------------------
-    6. Progress Bar
-  --------------------------------------------------------------*/
+  /* 6. Progress Bar----*/
   function progressBarInit() {
     $('.st-progressbar').each(function () {
       var progressPercentage = $(this).data('progress') + "%";
@@ -188,9 +166,7 @@
   }
 
 
-  /*--------------------------------------------------------------
-    7. Ajax Contact Form And Appointment
-  --------------------------------------------------------------*/
+  /* 7. Ajax Contact Form And Appointment---*/
   // Contact Form
   function formValidation() {
     if ($.exists('#contact-form #submit')) {
@@ -246,9 +222,7 @@
   }
 
 
-  /*--------------------------------------------------------------
-    8. Light Gallery
-  --------------------------------------------------------------*/
+  /* 8. Light Gallery-----*/
   function lightGallery() {
     $('.st-lightgallery').each(function () {
       $(this).lightGallery({
@@ -260,9 +234,7 @@
     });
   }
 
-  /*--------------------------------------------------------------
-    9. Social Button Hover
-  --------------------------------------------------------------*/
+  /* 9. Social Button Hover---*/
   function socialBtnHover() {
     $(".st-social-btn").hover(
       function () {
@@ -271,9 +243,7 @@
     )
   }
 
-  /*--------------------------------------------------------------
-    10. Slick Slider
-  --------------------------------------------------------------*/ 
+  /* 10. Slick Slider---*/ 
   function slickInit() {
     $('.st-slider').each(function () {
       // Slick Variable
@@ -356,9 +326,7 @@
       });
     })
   }
-  /*--------------------------------------------------------------
-    11. particles
-  --------------------------------------------------------------*/ 
+  /* 11. particles------*/ 
   function particles() {
     if ($.exists('#particles-js')) {
       particlesJS("particles-js", {
@@ -473,9 +441,8 @@
       });
     }
   }
-  /*--------------------------------------------------------------
-    12. Ripple
-  --------------------------------------------------------------*/
+  
+  /* 12. Ripple-----*/
   function rippleInit() {
     if ($.exists('.st-ripple-version')) {
       $('.st-ripple-version').each(function () {
@@ -488,9 +455,7 @@
     }
   }
 
-  /*--------------------------------------------------------------
-    13. Parallax Effect
-  --------------------------------------------------------------*/
+  /* 13. Parallax Effect------------------*/
   function parallaxEffect() {
     $('.st-parallax').each(function() {
       var windowScroll = $(document).scrollTop(),
