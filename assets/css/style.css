@@ -1076,8 +1076,8 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
           justify-content: baseline;
 }
 
@@ -2967,6 +2967,8 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-content: center;
+  align-items: center;
   justify-content: center;
 }
 
