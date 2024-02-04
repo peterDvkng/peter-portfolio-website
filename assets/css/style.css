@@ -1078,7 +1078,7 @@ canvas {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: baseline;
 }
 
 .st-hero-social-links .st-social-btn {
@@ -2967,6 +2967,7 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
 }
 
 .st-social-link .st-social-btn {
