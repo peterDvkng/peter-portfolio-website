@@ -46,6 +46,17 @@ html {
   overflow-x: hidden;
 }
 
+/* new css for underline on hoover*/
+.underline-on-hover {
+  text-decoration: none;
+  color: #ffffff;
+  transition: text-decoration 0.3s;
+}
+/* CSS for link when hovered */
+.underline-on-hover:hover {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
