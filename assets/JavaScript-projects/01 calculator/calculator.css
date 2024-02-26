@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #e3f9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  background: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.calculator form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  margin: 20px, 0;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+}
+
+form input.operator {
+  color: #33ffd8
+}
+
+.author {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+h4 {
+  color: white;
+  letter-spacing: 1.4px;
+  margin-top: none;
+  margin-bottom: 10px;
+  font-size: small;
+  text-decoration: underline;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  color: #33ffd8;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+  margin-top: none;
+  color: #33ffd8;
+  letter-spacing: 3px;
+  transition: 0.5s;
+}
