@@ -3057,3 +3057,198 @@ canvas {
 .color-p {
   color: #fec544;
 }
+
+
+/*new cssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
+.section-wrap {
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.project__container {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.project__img-holder {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project__img-holder>a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  -webkit-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -moz-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -ms-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -o-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.project__description {
+  padding-top: 20px;
+  width: 100%;
+  display: block;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  -webkit-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -moz-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -ms-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  -o-transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+  transition: 0.3s cubic-bezier(0.43, 0.07, 0.61, 0.95);
+}
+
+.project__title {
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.project__title a:hover {
+  color: #ffb31a;
+}
+
+.project__text {
+  color: #868686;
+}
+
+.project__category {
+  color: #868686;
+  font-size: 13px;
+}
+
+.project__category a {
+  color: inherit;
+}
+
+.project:hover .project__description {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.hover-overlay .project__description {
+  -webkit-transform: translateY(20%);
+  -moz-transform: translateY(20%);
+  -ms-transform: translateY(20%);
+  -o-transform: translateY(20%);
+  transform: translateY(20%);
+  position: absolute;
+  padding: 30px;
+  bottom: 0;
+}
+
+.hover-overlay .project__title,
+.hover-overlay .project__date,
+.hover-overlay .project__category {
+  color: #fff;
+}
+
+/* Project Style 1
+-------------------------------------------------------*/
+.project-1 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.project-1:last-child {
+  margin-bottom: 0;
+}
+
+.project-1__container {
+  width: 65%;
+}
+
+.project-1__description-holder {
+  width: 45%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fec544;
+  padding: 80px 60px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1050px) {
+  .project-1__description-holder {
+    padding: 40px 30px;
+  }
+}
+
+.project-1:nth-child(2n) .project-1__description-holder {
+  left: 0;
+  right: auto;
+}
+
+.project-1:nth-child(2n) .project-1__container {
+  margin-left: auto;
+}
+
+.project-1__title {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.project-1__text {
+  margin-bottom: 32px;
+  color: #000;
+  font-weight: bold;
+}
+
+.project-1 .read-more:hover,
+.project-1 .read-more:focus {
+  color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  .project-1 {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .project-1__container,
+  .project-1__description-holder {
+    width: 100%;
+  }
+
+  .project-1__description-holder {
+    padding: 40px 30px;
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+
+  .project-1__title {
+    font-size: 28px;
+  }
+}
